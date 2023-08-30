@@ -1,5 +1,5 @@
 #These two functions, `calc_mod_hash` and `calc_func_hash`, are custom hashing algorithms designed for quick data lookup and identification of module and function names, respectively. 
-They are not cryptographic hash functions and shouldn't be used for secure data hashing
+#They are not cryptographic hash functions and shouldn't be used for secure data hashing
 
 
 def calc_mod_hash(modname):
