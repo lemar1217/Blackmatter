@@ -1,7 +1,7 @@
 # Ghidra Python Script for Decrypting/Encrypting a uint using applyXORandNOT function , this sample of this ransom has this algo of how the decrypt the strings dynamically
 
 def applyXORandNOTToUInt(data):
-    # XOR the value with 0x10035fff
+    # XOR the value with  the key = 0x10035fff
     data = data ^ 0x10035fff
     # Apply bitwise NOT operation to invert all the bits
     data = ~data
