@@ -10,7 +10,8 @@ def applyXORandNOTToUInt(data):
     return data
 
 # Example
-encrypted_uint = 0xef90a045  # Your encrypted uint( as an example you can put the encrypted strings  there)
+encrypted_uint_str = askString("Enter encrypted uint", "Enter the encrypted 32-bit hexadecimal value:")
+encrypted_uint = int(encrypted_uint_str, 16)
 decrypted_uint = applyXORandNOTToUInt(encrypted_uint)
 print("Decrypted UInt:", hex(decrypted_uint))
 
